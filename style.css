@@ -1,0 +1,16 @@
+* { margin:0; padding:0; box-sizing:border-box; }
+body { background:#000; display:flex; justify-content:center; padding:20px; }
+.container-principal { background:#000; width:700px; display:flex; flex-wrap:wrap; gap:15px; justify-content:space-between; }
+.quadro { width:160px; height:160px; background:#0a1a2a; border-radius:8px; display:flex; padding:8px; gap:6px; }
+.caixa { width:30px; height:30px; border-radius:4px; }
+.c1 { background:#00bfff; } .c2 { background:#0099cc; } .c3 { background:#0077aa; } .c4 { background:#004466; }
+
+/* Cada quadrado com Flexbox diferente */
+.q1 { flex-direction:row; justify-content:flex-start; align-items:flex-start; }
+.q2 { flex-direction:column; justify-content:flex-start; align-items:flex-start; }
+.q3 { flex-direction:column; justify-content:flex-start; align-items:flex-end; }
+.q4 { flex-direction:row; justify-content:flex-end; align-items:flex-start; }
+.q5 { flex-direction:row; } .q5 .caixa { flex:1; }
+.q6 { justify-content:center; align-items:center; } .q6 .c3 { background:#fff; }
+.q7 { flex-wrap:wrap; justify-content:center; align-content:center; gap:8px; } .q7 .caixa { width:60px; height:60px; }
+.q8 { flex-direction:row; justify-content:flex-start; align-items:flex-end; }
