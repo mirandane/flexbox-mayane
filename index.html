@@ -1,16 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-<head><meta charset="UTF-8"><title>Exercicio Flexbox</title><link rel="stylesheet" href="style.css"></head>
+<head>
+<meta charset="UTF-8">
+<title>flexbox-mayane - Mayane Miranda Vieira</title>
+<style>
+body{background:#000;display:flex;justify-content:center;padding:20px;margin:0}
+.principal{width:700px;display:flex;flex-wrap:wrap;gap:15px}
+.q{width:155px;height:155px;background:#101f2f;border-radius:6px;display:flex;padding:8px;gap:5px}
+.c{width:28px;height:28px;border-radius:4px;background:#00b4ff}
+.q:nth-child(1){justify-content:flex-start;align-items:flex-start}
+.q:nth-child(2){flex-direction:column}
+.q:nth-child(3){flex-direction:column;align-items:flex-end}
+.q:nth-child(4){justify-content:flex-end;align-items:flex-start}
+.q:nth-child(5) .c{flex:1}
+.q:nth-child(6){justify-content:center;align-items:center}.q:nth-child(6) .c:nth-child(3){background:#fff}
+.q:nth-child(7){flex-wrap:wrap;justify-content:center;align-content:center}.q:nth-child(7) .c{width:60px;height:60px}
+.q:nth-child(8){align-items:flex-end}
+.c:nth-child(2){background:#008fcc}
+.c:nth-child(3){background:#0070aa}
+.c:nth-child(4){background:#004a70}
+</style>
+</head>
 <body>
-<div class="container-principal">
-<div class="quadro q1"><div class="caixa c1"></div><div class="caixa c2"></div><div class="caixa c3"></div><div class="caixa c4"></div></div>
-<div class="quadro q2"><div class="caixa c1"></div><div class="caixa c2"></div><div class="caixa c3"></div><div class="caixa c4"></div></div>
-<div class="quadro q3"><div class="caixa c1"></div><div class="caixa c2"></div><div class="caixa c3"></div><div class="caixa c4"></div></div>
-<div class="quadro q4"><div class="caixa c1"></div><div class="caixa c2"></div><div class="caixa c3"></div><div class="caixa c4"></div></div>
-<div class="quadro q5"><div class="caixa c1"></div><div class="caixa c2"></div><div class="caixa c3"></div><div class="caixa c4"></div></div>
-<div class="quadro q6"><div class="caixa c1"></div><div class="caixa c2"></div><div class="caixa c3"></div><div class="caixa c4"></div></div>
-<div class="quadro q7"><div class="caixa c1"></div><div class="caixa c2"></div><div class="caixa c3"></div><div class="caixa c4"></div></div>
-<div class="quadro q8"><div class="caixa c1"></div><div class="caixa c2"></div><div class="caixa c3"></div><div class="caixa c4"></div></div>
+<div class="principal">
+<div class="q"><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div></div>
+<div class="q"><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div></div>
+<div class="q"><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div></div>
+<div class="q"><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div></div>
+<div class="q"><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div></div>
+<div class="q"><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div></div>
+<div class="q"><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div></div>
+<div class="q"><div class="c"></div><div class="c"></div><div class="c"></div><div class="c"></div></div>
 </div>
 </body>
 </html>
